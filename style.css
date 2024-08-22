@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Figtree;
+}
+
+*, *::before, *::after{
+   box-sizing: border-box;
+}
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+    --fs: 16px;
+    --fw500: 500;
+    --fw800: 800;
+}
+
+body{
+   background-color: var(--Yellow);
+   min-height: 100dvh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.card{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--White);
+    gap: 20px;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--Gray950);
+    position: relative;
+    box-shadow: .5rem .5rem  var(--Gray950);
+    cursor: pointer;
+}
+
+
+.card > .illustration{
+    background-image: url('./assets/images/illustration-article.svg');
+    border-radius: 15px;
+    width: 100%;
+    aspect-ratio: 10/7;
+    background-position: center;
+}
+
+.card .detail{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--Gray950);
+}
+.card .detail span strong{
+    padding: .25rem .5rem;
+    background-color: var(--Yellow);
+    font-weight: var(--fw800);
+    width: fit-content;
+    font-size: .8rem;
+    border-radius: 5px;
+}
+.card .detail h6{
+    font-weight: var(--fw800);
+    color: var(--Gray950);
+}
+
+.card > h3{
+    font-weight: var(--fw800);
+    color: var(--Gray950);
+    transition: .3s;
+}
+.card > h3:hover{
+    color: var(--Yellow);
+}
+.card > p{
+    font-size: 14px;
+    font-weight: var(--fw500);
+    color: var(--Gray500);
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.user img{
+    width: 2rem;
+}
+.user h5{
+    font-weight: var(--fw800);
+    color: var(--Gray950);
+}
