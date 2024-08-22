@@ -26,7 +26,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [blog-preview-card](https://miksdev04.github.io/blog_preview_card/)
 
 ## My process
 
